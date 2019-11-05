@@ -1,4 +1,14 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<div fxLayout="column" fxLayoutAlign="start stretch" fxLayoutGap="20px">
+    <div fxLayout="row" fxLayoutAlign="center start">
+        <h1>Custom breakpoint</h1>
+    </div>
+    <div fxHide.xs.print="true" fxLayout="row" fxLayoutAlign="center start">
+        <h2>This should not print</h2>
+    </div>
+    <div fxHide.lt-md fxLayout="row" fxLayoutAlign="center start">
+        <h3>This will not be seen in mobile devices</h3>
+    </div>
+    <div fxHide.gt-xs fxLayout="row" fxLayoutAlign="center start">
+        <h4>This will not be seen in desktops</h4>
+    </div>
+</div>
