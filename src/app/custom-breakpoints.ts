@@ -4,7 +4,8 @@ const PRINT_BREAKPOINTS = [{
   alias: 'xs.print',
   suffix: 'XsPrint',
   mediaQuery: 'print',
-  overlapping: false
+  overlapping: false,
+  priority: 10000
 }];
 
 export const CustomBreakPointsProvider = { 
